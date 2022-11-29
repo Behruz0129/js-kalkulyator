@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 10rem 0;
+  background: linear-gradient(135deg, #dcdafa, #4f46e5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* ********************************* */
+/* HEADER */
+/* ********************************* */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+  font-size: 4.8rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.left div {
+  height: 6.2rem;
+  width: 6.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #0cd1a2;
+  opacity: 0.7;
+}
+
+.left div:hover,
+.left div:active,
+.left div.active {
+  opacity: 1;
+  border-color: #fff;
+}
+
+.left div:nth-child(1) {
+  background: url(./img/theme-av-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left div:nth-child(2) {
+  background: url(./img/theme-av-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left div:nth-child(3) {
+  background: url(./img/theme-av-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left div:nth-child(4) {
+  background: url(./img/theme-av-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left div:nth-child(5) {
+  background: url(./img/theme-av-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ********************************* */
+/* CALCULATOR */
+/* ********************************* */
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 10rem);
+  grid-template-rows: minmax(12rem, auto) repeat(5, 10rem);
+  grid-gap: 1rem;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 3rem;
+  border: 0.4rem solid #fff;
+  outline: none;
+  color: white;
+  background: none;
+  background-color: #0cd1a2;
+  border-radius: 4rem;
+}
+
+.calculator-grid > button:hover,
+.calculator-grid > button:active {
+  background-color: #0bbc92;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.8rem;
+}
+
+.output .current-operand {
+  color: #000;
+  font-size: 3rem;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* ********************************* */
+/* THEME */
+/* ********************************* */
+
+body.cb {
+  background: url(./img/cb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+body.gradient1 {
+  background: linear-gradient(135deg, #dcdafa, #4f46e5);
+}
+body.gradient2 {
+  background: linear-gradient(135deg, #92ec82, #356fe3);
+}
+body.nature {
+  background: url(./img/mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+body.naruto {
+  background: url(./img/naruto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
